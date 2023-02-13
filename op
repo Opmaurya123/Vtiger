@@ -1,0 +1,7 @@
+driver.get("https://validator.w3.org/#validate_by_input");
+        WebElement sendobj=driver.findElement(By.xpath("//textarea[@id=\"fragment\"]"));
+        JavascriptExecutor jsobj=(JavascriptExecutor)driver;
+        jsobj.executeScript("arguments[0].value='" + pagesco + "';", sendobj);
+	}
+
+}
